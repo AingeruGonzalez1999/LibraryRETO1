@@ -3,7 +3,7 @@
  */
 package classes;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * User class.
@@ -12,25 +12,25 @@ import java.sql.Timestamp;
  */
 public class User {
 
-    private long id;
+    private Integer id;
     private String login;
     private String email;
     private String fullName;
-    private boolean status;
-    private boolean privilege;
+    private UserStatus status;
+    private UserPrivilege privilege;
     private String password;
-    private Timestamp lastAccess;
-    private Timestamp lastPasswordChange;
+    private Date lastAccess;
+    private Date lastPasswordChange;
 
     public User() {
 
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -58,19 +58,19 @@ public class User {
         this.fullName = fullName;
     }
 
-    public boolean isStatus() {
+    public UserStatus getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(UserStatus status) {
         this.status = status;
     }
 
-    public boolean isPrivilege() {
+    public UserPrivilege getPrivilege() {
         return privilege;
     }
 
-    public void setPrivilege(boolean privilege) {
+    public void setPrivilege(UserPrivilege privilege) {
         this.privilege = privilege;
     }
 
@@ -82,20 +82,23 @@ public class User {
         this.password = password;
     }
 
-    public Timestamp getLastAccess() {
+    public Date getLastAccess() {
         return lastAccess;
     }
 
-    public void setLastAccess(Timestamp lastAccess) {
+    public void setLastAccess(Date lastAccess) {
         this.lastAccess = lastAccess;
     }
 
-    public Timestamp getLastPasswordChange() {
+    public Date getLastPasswordChange() {
         return lastPasswordChange;
     }
 
-    public void setLastPasswordChange(Timestamp lastPasswordChange) {
+    public void setLastPasswordChange(Date lastPasswordChange) {
         this.lastPasswordChange = lastPasswordChange;
     }
+
+    
+
 
 }
