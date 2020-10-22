@@ -1,8 +1,9 @@
 /*
  * This package have the classes of database.
  */
-package classes;
+package model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Date;
  *
  * @author gsalg
  */
-public class User {
+public class User  implements Serializable{
 
     private Integer id;
     private String login;

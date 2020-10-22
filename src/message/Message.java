@@ -3,27 +3,36 @@
  */
 package message;
 
+import java.io.Serializable;
+import model.User;
+
 /**
- * This class have the type of message.
+ * This class have the type of message and the User we will send.
  * @author gsalg
  */
-public class Message {
+public class Message implements Serializable{
     
-    MessageType messageType;
+    private MessageType messageType;
+    private User user;
     
     public Message(MessageType messageType){
         this.messageType=messageType;
     }
-    
-    switch(messageType){
-    
-        case SIGNIN:
-            break;
-            
-        case SIGNUP:
-            break;
-            
-        default:
-            break;
+
+    public MessageType getMessageType() {
+        return messageType;
     }
+
+    public void setMessageType(MessageType messageType) {
+        this.messageType = messageType;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+    
 }

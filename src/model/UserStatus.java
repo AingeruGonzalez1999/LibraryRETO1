@@ -1,7 +1,7 @@
 /*
  * This package have the classes of database.
  */
-package classes;
+package model;
 
 /**
  * Enum for user status.
