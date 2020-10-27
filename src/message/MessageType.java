@@ -1,15 +1,44 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * This package will be contein the message.
  */
 package message;
 
 /**
+ * This class have the type of the message.
  *
  * @author gsalg
  */
 public enum MessageType {
+    /**
+     * Request signIn operation.
+     */
     SIGNIN,
-    SIGNUP;
+    /**
+     * Request signUp operation.
+     */
+    SIGNUP,
+    /**
+     * Respond to the customer with the validation OK
+     */
+    OK,
+    /**
+     * Respond to the customer with the error EMAIL_EXIST
+     */
+    EMAIL_EXIST,
+    /**
+     * Respond to the customer with the error USER_EXIST
+     */
+    USER_EXIST,
+    /**
+     * Respond to the customer with the error USER_NOT_EXIST
+     */
+    USER_NOT_EXIST,
+    /**
+     * Respond to the customer with the error INVALID_PASSWORD
+     */
+    INVALID_PASSWORD,
+    /**
+     * Respond to the customer with the error SERVER_ERROR
+     */
+    SERVER_ERROR;
 }
