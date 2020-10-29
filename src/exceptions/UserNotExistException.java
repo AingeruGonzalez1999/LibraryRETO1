@@ -7,12 +7,12 @@ package exceptions;
  * This class will return user is not exist exception.
  * @author gsalg
  */
-public class UserOrPassNotExistException extends Exception{
+public class UserNotExistException extends Exception{
     
     /**
      * This method shows exception.
      */
-    public UserOrPassNotExistException() {
+    public UserNotExistException() {
         super("This user or password does not exist.");
     }
     

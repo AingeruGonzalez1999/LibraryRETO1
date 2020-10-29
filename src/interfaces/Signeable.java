@@ -4,9 +4,10 @@
 package interfaces;
 
 import exceptions.EmailExistException;
+import exceptions.InvalidPasswordException;
 import exceptions.ServerException;
 import exceptions.UserExistException;
-import exceptions.UserOrPassNotExistException;
+import exceptions.UserNotExistException;
 import model.User;
 
 /**
@@ -20,10 +21,10 @@ public interface Signeable {
      * This method receives a user to be able to sign in.
      * @param user
      * @return
-     * @throws exceptions.UserOrPassNotExistException
+     * @throws exceptions.UserNotExistException
      * @throws exceptions.ServerException
      */
-    public User signIn(User user) throws UserOrPassNotExistException, ServerException;
+    public User signIn(User user) throws UserNotExistException, ServerException, InvalidPasswordException;
 
     /**
      * This method receives a user to be able to sign up.
