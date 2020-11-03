@@ -7,7 +7,7 @@ package exceptions;
 
 /**
  *
- * @author gsalg
+ * @author Garikoitz
  */
 public class InvalidPasswordException extends Exception {
 

@@ -5,7 +5,7 @@ package model;
 
 /**
  * Enum for user status.
- * @author gsalg
+ * @author Garikoitz
  */
 public enum UserStatus {
     ENABLED,

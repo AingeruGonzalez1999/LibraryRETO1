@@ -6,7 +6,7 @@ package message;
 /**
  * This class have the type of the message.
  *
- * @author gsalg
+ * @author Garikoitz
  */
 public enum MessageType {
     /**

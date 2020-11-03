@@ -5,7 +5,7 @@ package exceptions;
 
 /**
  * This class will return email exception.
- * @author gsalg
+     * @author Garikoitz
  */
 public class EmailExistException extends Exception{
     

@@ -13,7 +13,7 @@ import model.User;
 /**
  * Contain sign methods for being used by a DB.
  *
- * @author gsalg
+ * @author Garikoitz
  */
 public interface Signeable {
 
