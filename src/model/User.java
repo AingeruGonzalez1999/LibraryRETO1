@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * User class.
  *
- * @author gsalg
+ * @author Garikoitz
  */
 public class User  implements Serializable{
 

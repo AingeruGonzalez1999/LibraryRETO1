@@ -5,7 +5,7 @@ package exceptions;
 
 /**
  * This class will return user already exist exception.
- * @author gsalg
+ * @author Garikoitz
  */
 public class UserExistException extends Exception {
     

@@ -8,7 +8,7 @@ import model.User;
 
 /**
  * This class have the type of message and the User we will send.
- * @author gsalg
+ * @author Garikoitz
  */
 public class Message implements Serializable{
     

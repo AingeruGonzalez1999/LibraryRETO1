@@ -5,7 +5,7 @@ package model;
 
 /**
  * Enum for user privilege.
- * @author gsalg
+ * @author Garikoitz
  */
 public enum UserPrivilege {
     USER,
